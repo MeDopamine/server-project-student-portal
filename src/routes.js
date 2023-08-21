@@ -3,7 +3,7 @@ const { addStudentHandler, getAllStudentHandler, getStudentByIdHandler, editStud
 const routes = [
     {
         method: 'POST',
-        path: '/students',
+        path: '/add',
         handler: addStudentHandler,
     },
     {
