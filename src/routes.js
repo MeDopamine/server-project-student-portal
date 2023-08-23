@@ -1,4 +1,4 @@
-const { addStudentHandler, getAllStudentHandler, getStudentByIdHandler, editStudentByIdHandler, deleteStudentByIdHandler } = require('./handler');
+const { getHome, addStudentHandler, getAllStudentHandler, getStudentByIdHandler, editStudentByIdHandler, deleteStudentByIdHandler } = require('./handler');
 
 const routes = [
     {
@@ -10,6 +10,11 @@ const routes = [
         method: 'GET',
         path: '/students',
         handler: getAllStudentHandler,
+    },
+    {
+        method: 'GET',
+        path: '/',
+        handler: getHome,
     },
     {
         method: 'GET',

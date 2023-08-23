@@ -112,4 +112,9 @@ const deleteStudentByIdHandler = (request, h) => {
     }
 }
 
-module.exports = { addStudentHandler, getAllStudentHandler, getStudentByIdHandler, editStudentByIdHandler, deleteStudentByIdHandler };
+const getHome = () => ({
+    status: 'success',
+    message: 'Berhasil masuk',
+})
+
+module.exports = { getHome, addStudentHandler, getAllStudentHandler, getStudentByIdHandler, editStudentByIdHandler, deleteStudentByIdHandler };
